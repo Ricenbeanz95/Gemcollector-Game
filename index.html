@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-color:lightblue;
+            margin:0;
+            padding:0;
+        }
+
+        .gemsrow{
+            background-color:lightcoral;
+            
+        }
+        .pouch{
+            display: block;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+    <header class = "container">
+        <div class = "row">
+            <div class = "col-12">
+                <h1>Gem Collector</h1>
+            </div>
+        </div>
+    </header>
+    <main class = "container">
+        <div class = "row">
+            <div class = "col-6">
+                <p>The object of the game is to click the gems below to collect them.</p>
+                <p>Each gem is assigned a different number value.</p>
+                <p>Your bag can only hold so much, if you exceed the bags limit it will break and you'll lose.</p>
+                <p>*Remember no playthrough is the same, the numbers assigned to the bag and gems will change, keep that in mind when the game resets.</p>
+            </div>
+        </div>
+    <div class = "container">
+        <div class = "row gemsrow">
+            <div class = "col-3">
+                <img class = "gems g1" src = "assests\gem asset1 test.png">
+            </div>
+            <div class = "col-3">
+                <img class = "gems g2" src = "assests\gem assets 2.png">
+            </div>
+            <div class = "col-3">
+                <img class = "gems g3" src = "assests\gem assets 3.png">
+            </div>
+            <div class = "col-3">
+                <img class = "gems g4" src = "assests\gem assests 4.png">
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class ="col-3">
+                <p>Wins: <span id = "wins"></span></p>
+                <p>loses: <span id = "loses"></span></p>
+            </div>
+            <div class ="col-6">
+                <img class = "pouch" src = "assests\Pouch.jpg">
+                <h2>Bag limit:<span id = "baglimit"></span></h2>
+            </div>
+        </div>
+    </div>
+
+        
+    </main>
+    <script>
+        //reference class activities week4-12 for help.
+        var Gems = ranNum;
+        var wins = 0;
+        var loses = 0;
+        var gemTotal = 
+        
+            
+        
+        document.getElementsByClassName("gems").addEventListener("click",function(){
+
+
+        });
+
+        var ranNum = Math.floor(Math.random()*11)+1;
+        console.log(ranNum);
+
+        var bagLimit = Math.floor(Math.random()*70)+50;
+        console.log(bagLimit);
+        
+        document.getElementById("baglimit").innerHTML = bagLimit;
+        
+
+
+
+    </script>
+
+    
+</body>
+</html>
